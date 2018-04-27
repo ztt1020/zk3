@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>张甜甜周考3</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="fonts/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<script>
+			document.documentElement.style.fontSize=window.innerWidth / 750 * 100 + "px";
+		</script>
+	</head>
+	<body>
+		<div class="wrap">
+			<header>
+				<form action="">
+					<i class="icon iconfont icon-fangdajing"></i><a href="page/search.html"><input type="text" placeholder="小米MIX 2S"/></a>
+				</form>
+				<span><i class="icon iconfont icon-xiaoxi"></i></span>
+			</header>
+			<section>
+				
+				<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<!--<div class="swiper-slide">
+						<img src="imgs/2079b1dbdade827.jpg"/>
+					</div>-->
+				<div class="swiper-pagination"></div>
+				</div>
+
+			</div>
+			
+			<script type="text/x-handlebars-template" id="lb">
+                        {{#each this}}
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="{{img}}">
+                            </a>
+                        </div>
+                        {{/each}}
+                    </script>
+			
+			</section>
+			<footer>
+				<p><i class="icon iconfont icon-shouye"></i><span>首页</span></p>
+				<p><i class="icon iconfont icon-shoucang"></i><span>首页</span></p>
+				<p><i class="icon iconfont icon-wode"></i><span>首页</span></p>
+				<p><i class="icon iconfont icon-xiala"></i><span>首页</span></p>
+				<p><i class="icon iconfont icon-xiaoxi"></i><span>首页</span></p>
+			</footer>
+		</div>
+		<script src="js/require.js" data-main="js/main" async='true'></script>
+		<!--<script>
+			$.ajax({
+				url:"/lb",
+				success:function(res){
+					var data=JSON.parse(res).swiper;
+					render(data)
+		
+		
+				},
+				error:function(){
+					console.warn(error)
+				}
+			})
+			function render(data){
+				console.log(data)
+			var lbSource=$("#lb").html();
+		
+			var lbTemplate=Handlebars.compile(lbSource);
+			var html=lbTemplate(data);
+			$(".swiper-wrapper").html(html)
+			new swiper(".swiper-container",{
+				autoplay:true,
+				loop:true
+		
+			})
+			}
+		</script>-->
+	</body>
+</html>

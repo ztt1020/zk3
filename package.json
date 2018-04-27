@@ -1,0 +1,23 @@
+{
+  "name": "zk3",
+  "version": "1.0.0",
+  "description": "周考3",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ztt1020/zk3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ztt1020/zk3/issues"
+  },
+  "homepage": "https://github.com/ztt1020/zk3#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-webserver": "^0.9.1"
+  }
+}
